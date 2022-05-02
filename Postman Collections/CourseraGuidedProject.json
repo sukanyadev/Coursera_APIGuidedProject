@@ -1,0 +1,1169 @@
+{
+  "info": {
+    "_postman_id": "c32de272-3f3d-41ad-900c-74fa1f5c4dc1",
+    "name": "BestBuyAppAPIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetAllProducts",
+      "_postman_id": "5da4d019-dd48-44bf-8ebc-4da44c49708a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3030/products",
+        "description": "GET Request : /products\n\nList out all the products without any path and query parameters."
+      },
+      "response": [
+        {
+          "id": "1e367289-6b64-48d6-abcd-99488b4f4d91",
+          "name": "GetAllProducts",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3030/products"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2caa-TezTeq2vIiVxSLYtAw9IUkVotFc\""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 18 Feb 2022 20:11:53 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"total\": 51957,\n    \"limit\": 10,\n    \"skip\": 0,\n    \"data\": [\n        {\n            \"id\": 43900,\n            \"name\": \"Duracell - AAA Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333424019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN2400B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 48530,\n            \"name\": \"Duracell - AA 1.5V CopperTop Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333415017\",\n            \"shipping\": 0,\n            \"description\": \"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 127687,\n            \"name\": \"Duracell - AA Batteries (8-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.49,\n            \"upc\": \"041333825014\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B8Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 150115,\n            \"name\": \"Energizer - MAX Batteries AA (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 4.99,\n            \"upc\": \"039800011329\",\n            \"shipping\": 0,\n            \"description\": \"4-pack AA alkaline batteries; battery tester included\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E91BP-4\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185230,\n            \"name\": \"Duracell - C Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 8.99,\n            \"upc\": \"041333440019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1400R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185267,\n            \"name\": \"Duracell - D Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 9.99,\n            \"upc\": \"041333430010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1300R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 309062,\n            \"name\": \"Pioneer - 4\\\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 144.99,\n            \"upc\": \"012562165141\",\n            \"shipping\": 0,\n            \"description\": \"80W maximum power (20W RMS); 4\\\" IMPP composite cone woofer; 3/4\\\" horn tweeter\",\n            \"manufacturer\": \"Pioneer\",\n            \"model\": \"TS-X200\",\n            \"url\": \"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302000\",\n                    \"name\": \"Car Audio\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302005\",\n                    \"name\": \"Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat360500050015\",\n                    \"name\": \"4\\\" Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 312290,\n            \"name\": \"Duracell - 9V Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.99,\n            \"upc\": \"041333216010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1604B2Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 333179,\n            \"name\": \"Energizer - N Cell E90 Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.99,\n            \"upc\": \"039800013200\",\n            \"shipping\": 0,\n            \"description\": \"Alkaline batteries; 1.5V\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E90BP-2\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208006\",\n                    \"name\": \"Specialty Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 346575,\n            \"name\": \"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 16.99,\n            \"upc\": \"086429002757\",\n            \"shipping\": 0,\n            \"description\": \"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket\",\n            \"manufacturer\": \"Metra\",\n            \"model\": \"99-5512\",\n            \"url\": \"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050023\",\n                    \"name\": \"Car Installation Parts & Accessories\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050031\",\n                    \"name\": \"Deck Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050033\",\n                    \"name\": \"Dash Installation Kits\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat331600050007\",\n                    \"name\": \"Car Audio Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "AddingEnvironmentVariables",
+      "_postman_id": "812f63b3-b581-481e-aa8a-bd966cd0a7e6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://{{server}}:{{portNumber}}/products"
+      },
+      "response": [
+        {
+          "id": "f9ad53bb-28fa-4309-90af-426b7b4c88c9",
+          "name": "AddingEnvironmentVariables",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "http://{{server}}:{{portNumber}}/products"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2caa-mJN78qqKvLYWh66TBBc9uQb5X9M\""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:02:30 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"total\": 51958,\n    \"limit\": 10,\n    \"skip\": 0,\n    \"data\": [\n        {\n            \"id\": 43900,\n            \"name\": \"Duracell - AAA Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333424019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN2400B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 48530,\n            \"name\": \"Duracell - AA 1.5V CopperTop Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333415017\",\n            \"shipping\": 0,\n            \"description\": \"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 127687,\n            \"name\": \"Duracell - AA Batteries (8-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.49,\n            \"upc\": \"041333825014\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B8Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 150115,\n            \"name\": \"Energizer - MAX Batteries AA (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 4.99,\n            \"upc\": \"039800011329\",\n            \"shipping\": 0,\n            \"description\": \"4-pack AA alkaline batteries; battery tester included\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E91BP-4\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185230,\n            \"name\": \"Duracell - C Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 8.99,\n            \"upc\": \"041333440019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1400R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185267,\n            \"name\": \"Duracell - D Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 9.99,\n            \"upc\": \"041333430010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1300R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 309062,\n            \"name\": \"Pioneer - 4\\\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 144.99,\n            \"upc\": \"012562165141\",\n            \"shipping\": 0,\n            \"description\": \"80W maximum power (20W RMS); 4\\\" IMPP composite cone woofer; 3/4\\\" horn tweeter\",\n            \"manufacturer\": \"Pioneer\",\n            \"model\": \"TS-X200\",\n            \"url\": \"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302000\",\n                    \"name\": \"Car Audio\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302005\",\n                    \"name\": \"Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat360500050015\",\n                    \"name\": \"4\\\" Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 312290,\n            \"name\": \"Duracell - 9V Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.99,\n            \"upc\": \"041333216010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1604B2Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 333179,\n            \"name\": \"Energizer - N Cell E90 Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.99,\n            \"upc\": \"039800013200\",\n            \"shipping\": 0,\n            \"description\": \"Alkaline batteries; 1.5V\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E90BP-2\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208006\",\n                    \"name\": \"Specialty Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 346575,\n            \"name\": \"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 16.99,\n            \"upc\": \"086429002757\",\n            \"shipping\": 0,\n            \"description\": \"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket\",\n            \"manufacturer\": \"Metra\",\n            \"model\": \"99-5512\",\n            \"url\": \"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050023\",\n                    \"name\": \"Car Installation Parts & Accessories\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050031\",\n                    \"name\": \"Deck Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050033\",\n                    \"name\": \"Dash Installation Kits\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat331600050007\",\n                    \"name\": \"Car Audio Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "GetAllProducts_Query_Parameter",
+      "_postman_id": "c7763aaa-a0aa-4d44-8769-a8ad5d4de41f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3030/products?$limit=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3030",
+          "path": [
+            "products"
+          ],
+          "query": [
+            {
+              "key": "$limit",
+              "value": "2"
+            }
+          ]
+        },
+        "description": "GET Request : /products\n\n2 parameters in the GET request : $limit and $skip\n\nHere, $limit Query parameter is used to check if the product list displayed is limited to certain number passed.\n\nQuery paramter - filters the response data"
+      },
+      "response": [
+        {
+          "id": "1adc0dcb-b2df-48a7-a451-9aa775c50e43",
+          "name": "GetAllProducts_Query_Parameter",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3030/products?$limit=2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3030",
+              "path": [
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "$limit",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"8ea-2a6MzyHT4fG9InPy0yxtb/nZD08\""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 18 Feb 2022 20:20:01 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"total\": 51957,\n    \"limit\": 2,\n    \"skip\": 0,\n    \"data\": [\n        {\n            \"id\": 43900,\n            \"name\": \"Duracell - AAA Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333424019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN2400B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 48530,\n            \"name\": \"Duracell - AA 1.5V CopperTop Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333415017\",\n            \"shipping\": 0,\n            \"description\": \"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "GetAllProducts_Path_Parameter",
+      "_postman_id": "3b2e6c96-1d58-44a3-869c-6213b043ea32",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3030/products/48530",
+        "description": "GET Request - /products{(id)}\n\nParameter is ID\n\nPass an id and returns a response with just one ID.\nThere is no total, limit or skip parameters in the JSON response code.\n\nPath parameter - returns a item which is searched"
+      },
+      "response": [
+        {
+          "id": "5be7a2dd-fb0b-4167-b274-5fcdb9d91c39",
+          "name": "GetAllProducts_Path_Parameter",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3030/products/48530"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"475-es3AgNr7in6QoH7mFYxhTyiJNPc\""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Date",
+              "value": "Fri, 18 Feb 2022 20:20:48 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"id\": 48530,\n    \"name\": \"Duracell - AA 1.5V CopperTop Batteries (4-Pack)\",\n    \"type\": \"HardGood\",\n    \"price\": 5.49,\n    \"upc\": \"041333415017\",\n    \"shipping\": 0,\n    \"description\": \"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more\",\n    \"manufacturer\": \"Duracell\",\n    \"model\": \"MN1500B4Z\",\n    \"url\": \"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC\",\n    \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg\",\n    \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n    \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n    \"categories\": [\n        {\n            \"id\": \"abcat0208002\",\n            \"name\": \"Alkaline Batteries\",\n            \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n            \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n        },\n        {\n            \"id\": \"pcmcat248700050021\",\n            \"name\": \"Housewares\",\n            \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n            \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n        },\n        {\n            \"id\": \"pcmcat303600050001\",\n            \"name\": \"Household Batteries\",\n            \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n            \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n        },\n        {\n            \"id\": \"pcmcat312300050015\",\n            \"name\": \"Connected Home & Housewares\",\n            \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n            \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "CreateNewEntry",
+      "_postman_id": "2e7fa09a-376d-4ede-9e5c-9fb2907797a9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Samsumng Mobile\",\n  \"type\": \"Android\",\n  \"price\": 10000 ,\n  \"shipping\": 1000,\n  \"upc\": \"string\",\n  \"description\": \"string\",\n  \"manufacturer\": \"Samsung\",\n  \"model\": \"A20\",\n  \"url\": \"string\",\n  \"image\": \"string\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3030/products",
+        "description": "Insert or Create a new entry. Adding a new product to the existing product list by passing all the required parameters"
+      },
+      "response": [
+        {
+          "id": "ae4aaa7e-3cac-4efa-9447-09f5f96e931e",
+          "name": "CreateNewEntry",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Samsumng Mobile\",\n  \"type\": \"Android\",\n  \"price\": 10000 ,\n  \"shipping\": 1000,\n  \"upc\": \"string\",\n  \"description\": \"string\",\n  \"manufacturer\": \"Samsung\",\n  \"model\": \"A20\",\n  \"url\": \"string\",\n  \"image\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3030/products"
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "273"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"111-MS+3DvW8hDzQEZ0YcpCe+Yvo6KM\""
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:03:09 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"id\": 9999682,\n    \"name\": \"Samsumng Mobile\",\n    \"type\": \"Android\",\n    \"price\": 10000,\n    \"shipping\": 1000,\n    \"upc\": \"string\",\n    \"description\": \"string\",\n    \"manufacturer\": \"Samsung\",\n    \"model\": \"A20\",\n    \"url\": \"string\",\n    \"image\": \"string\",\n    \"updatedAt\": \"2022-02-19T22:03:09.807Z\",\n    \"createdAt\": \"2022-02-19T22:03:09.807Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "HeadersInPostRequest",
+      "_postman_id": "a1d3d4dc-1140-4283-bc60-69f52d035639",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Samsumng Mobile\",\n  \"type\": \"Android\",\n  \"price\": 10000 ,\n  \"shipping\": 1000,\n  \"upc\": \"string\",\n  \"description\": \"string\",\n  \"manufacturer\": \"Samsung\",\n  \"model\": \"A20\",\n  \"url\": \"string\",\n  \"image\": \"string\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3030/products"
+      },
+      "response": [
+        {
+          "id": "56e1c57a-09e3-4c4d-90ab-9f573948bc72",
+          "name": "HeadersInPostRequest",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Samsumng Mobile\",\n  \"type\": \"Android\",\n  \"price\": 10000 ,\n  \"shipping\": 1000,\n  \"upc\": \"string\",\n  \"description\": \"string\",\n  \"manufacturer\": \"Samsung\",\n  \"model\": \"A20\",\n  \"url\": \"string\",\n  \"image\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3030/products"
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "273"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"111-6t5KG4GCi6r1hChVa9LHfFl/XgA\""
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:04:30 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"id\": 9999683,\n    \"name\": \"Samsumng Mobile\",\n    \"type\": \"Android\",\n    \"price\": 10000,\n    \"shipping\": 1000,\n    \"upc\": \"string\",\n    \"description\": \"string\",\n    \"manufacturer\": \"Samsung\",\n    \"model\": \"A20\",\n    \"url\": \"string\",\n    \"image\": \"string\",\n    \"updatedAt\": \"2022-02-19T22:04:30.897Z\",\n    \"createdAt\": \"2022-02-19T22:04:30.897Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "SearchNewEntry",
+      "_postman_id": "c66caada-3cab-4ba6-8b83-0ed6f1706543",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3030/products/9999682",
+        "description": "Search the entry created using POST request"
+      },
+      "response": [
+        {
+          "id": "15894f3d-2b60-43c5-9a6a-5b3ae91fb7ed",
+          "name": "SearchNewEntry",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3030/products/9999682"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "289"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"121-3Q5y94JNIGm/dn2ZdvmDUMYslDs\""
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:05:02 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"id\": 9999682,\n    \"name\": \"Samsumng Mobile\",\n    \"type\": \"Android\",\n    \"price\": 10000,\n    \"upc\": \"string\",\n    \"shipping\": 1000,\n    \"description\": \"string\",\n    \"manufacturer\": \"Samsung\",\n    \"model\": \"A20\",\n    \"url\": \"string\",\n    \"image\": \"string\",\n    \"createdAt\": \"2022-02-19T22:03:09.807Z\",\n    \"updatedAt\": \"2022-02-19T22:03:09.807Z\",\n    \"categories\": []\n}"
+        }
+      ]
+    },
+    {
+      "name": "PutRequestForNewEntry",
+      "_postman_id": "69cf3d5a-3dc5-4dbe-b5d2-65b6e4a75e40",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Iphone Mobile\",\n  \"type\": \"IOS\",\n  \"price\": 10000 ,\n  \"shipping\": 1000,\n  \"upc\": \"string\",\n  \"description\": \"string\",\n  \"manufacturer\": \"Samsung\",\n  \"model\": \"Iphone 11 Pro\",\n  \"url\": \"string\",\n  \"image\": \"string\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3030/products/9999682"
+      },
+      "response": [
+        {
+          "id": "8b78bd73-a0a0-4875-8790-031178aa4a2e",
+          "name": "PutRequestForNewEntry",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Iphone Mobile\",\n  \"type\": \"IOS\",\n  \"price\": 10000 ,\n  \"shipping\": 1000,\n  \"upc\": \"string\",\n  \"description\": \"string\",\n  \"manufacturer\": \"Samsung\",\n  \"model\": \"Iphone 11 Pro\",\n  \"url\": \"string\",\n  \"image\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3030/products/9999682"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "277"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"115-Fi77G4P/f9yECwkx/vlkufEIYbM\""
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:05:59 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"id\": 9999682,\n    \"name\": \"Iphone Mobile\",\n    \"type\": \"IOS\",\n    \"price\": 10000,\n    \"upc\": \"string\",\n    \"shipping\": 1000,\n    \"description\": \"string\",\n    \"manufacturer\": \"Samsung\",\n    \"model\": \"Iphone 11 Pro\",\n    \"url\": \"string\",\n    \"image\": \"string\",\n    \"createdAt\": \"2022-02-19T22:03:09.807Z\",\n    \"updatedAt\": \"2022-02-19T22:05:59.840Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "PatchRequestForNewEntry",
+      "_postman_id": "851ac2b3-1c8c-4986-9c46-33e258d8b497",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Iphone 12 Mobile\"\n   \n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:3030/products/9999682"
+      },
+      "response": [
+        {
+          "id": "89ee2c9d-74d4-4603-814e-775bc78571a1",
+          "name": "PatchRequestForNewEntry",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Iphone 12 Mobile\"\n   \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "http://localhost:3030/products/9999682"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "280"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"118-whD5fV6J+dMZzG988Nv0WYplcqk\""
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:06:25 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"id\": 9999682,\n    \"name\": \"Iphone 12 Mobile\",\n    \"type\": \"IOS\",\n    \"price\": 10000,\n    \"upc\": \"string\",\n    \"shipping\": 1000,\n    \"description\": \"string\",\n    \"manufacturer\": \"Samsung\",\n    \"model\": \"Iphone 11 Pro\",\n    \"url\": \"string\",\n    \"image\": \"string\",\n    \"createdAt\": \"2022-02-19T22:03:09.807Z\",\n    \"updatedAt\": \"2022-02-19T22:06:25.775Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "DeleteRequestForNewEntry",
+      "_postman_id": "5a264dcf-3c3b-401f-83a7-13cf685a06ce",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:3030/products/9999682"
+      },
+      "response": [
+        {
+          "id": "8c575272-6b5c-4065-afcd-63d0955dae26",
+          "name": "DeleteRequestForNewEntry",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": "http://localhost:3030/products/9999682"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "280"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"118-whD5fV6J+dMZzG988Nv0WYplcqk\""
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:06:47 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"id\": 9999682,\n    \"name\": \"Iphone 12 Mobile\",\n    \"type\": \"IOS\",\n    \"price\": 10000,\n    \"upc\": \"string\",\n    \"shipping\": 1000,\n    \"description\": \"string\",\n    \"manufacturer\": \"Samsung\",\n    \"model\": \"Iphone 11 Pro\",\n    \"url\": \"string\",\n    \"image\": \"string\",\n    \"createdAt\": \"2022-02-19T22:03:09.807Z\",\n    \"updatedAt\": \"2022-02-19T22:06:25.775Z\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "CreatingTests",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "3ba55b77-aeae-4d09-a768-0f857f1c22f4",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "28bb5469-808d-4ede-882b-2e713cfb7af0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3030/products",
+        "description": "Verify if the response code received is correct or not"
+      },
+      "response": [
+        {
+          "id": "6d5cf5cf-c36f-427d-9673-58c6f7f237f1",
+          "name": "CreatingTests",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3030/products"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2caa-dcT3rl7XzgPlNvcDobCBvfWYUt4\""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:07:32 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"total\": 51959,\n    \"limit\": 10,\n    \"skip\": 0,\n    \"data\": [\n        {\n            \"id\": 43900,\n            \"name\": \"Duracell - AAA Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333424019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN2400B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 48530,\n            \"name\": \"Duracell - AA 1.5V CopperTop Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333415017\",\n            \"shipping\": 0,\n            \"description\": \"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 127687,\n            \"name\": \"Duracell - AA Batteries (8-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.49,\n            \"upc\": \"041333825014\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B8Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 150115,\n            \"name\": \"Energizer - MAX Batteries AA (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 4.99,\n            \"upc\": \"039800011329\",\n            \"shipping\": 0,\n            \"description\": \"4-pack AA alkaline batteries; battery tester included\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E91BP-4\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185230,\n            \"name\": \"Duracell - C Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 8.99,\n            \"upc\": \"041333440019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1400R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185267,\n            \"name\": \"Duracell - D Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 9.99,\n            \"upc\": \"041333430010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1300R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 309062,\n            \"name\": \"Pioneer - 4\\\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 144.99,\n            \"upc\": \"012562165141\",\n            \"shipping\": 0,\n            \"description\": \"80W maximum power (20W RMS); 4\\\" IMPP composite cone woofer; 3/4\\\" horn tweeter\",\n            \"manufacturer\": \"Pioneer\",\n            \"model\": \"TS-X200\",\n            \"url\": \"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302000\",\n                    \"name\": \"Car Audio\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302005\",\n                    \"name\": \"Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat360500050015\",\n                    \"name\": \"4\\\" Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 312290,\n            \"name\": \"Duracell - 9V Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.99,\n            \"upc\": \"041333216010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1604B2Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 333179,\n            \"name\": \"Energizer - N Cell E90 Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.99,\n            \"upc\": \"039800013200\",\n            \"shipping\": 0,\n            \"description\": \"Alkaline batteries; 1.5V\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E90BP-2\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208006\",\n                    \"name\": \"Specialty Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 346575,\n            \"name\": \"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 16.99,\n            \"upc\": \"086429002757\",\n            \"shipping\": 0,\n            \"description\": \"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket\",\n            \"manufacturer\": \"Metra\",\n            \"model\": \"99-5512\",\n            \"url\": \"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050023\",\n                    \"name\": \"Car Installation Parts & Accessories\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050031\",\n                    \"name\": \"Deck Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050033\",\n                    \"name\": \"Dash Installation Kits\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat331600050007\",\n                    \"name\": \"Car Audio Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "AddingAssertions",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "4fa7577e-b9e3-4cb5-82b8-20e40833d934",
+            "exec": [
+              "pm.test(\"limit default value is 10\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.limit).to.eql(10);",
+              "});",
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "1589377c-8d75-41dd-b33b-5f05080b300f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:3030/products",
+        "description": "Add assertions to verify the response body"
+      },
+      "response": [
+        {
+          "id": "affe6565-9928-4e4d-a893-3a47897845f3",
+          "name": "AddingAssertions",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "http://localhost:3030/products"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Allow",
+              "value": "GET,POST,PUT,PATCH,DELETE"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept, Accept-Encoding"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2caa-dcT3rl7XzgPlNvcDobCBvfWYUt4\""
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:07:58 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"total\": 51959,\n    \"limit\": 10,\n    \"skip\": 0,\n    \"data\": [\n        {\n            \"id\": 43900,\n            \"name\": \"Duracell - AAA Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333424019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN2400B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 48530,\n            \"name\": \"Duracell - AA 1.5V CopperTop Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.49,\n            \"upc\": \"041333415017\",\n            \"shipping\": 0,\n            \"description\": \"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 127687,\n            \"name\": \"Duracell - AA Batteries (8-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.49,\n            \"upc\": \"041333825014\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1500B8Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 150115,\n            \"name\": \"Energizer - MAX Batteries AA (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 4.99,\n            \"upc\": \"039800011329\",\n            \"shipping\": 0,\n            \"description\": \"4-pack AA alkaline batteries; battery tester included\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E91BP-4\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185230,\n            \"name\": \"Duracell - C Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 8.99,\n            \"upc\": \"041333440019\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1400R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 185267,\n            \"name\": \"Duracell - D Batteries (4-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 9.99,\n            \"upc\": \"041333430010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1300R4Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 309062,\n            \"name\": \"Pioneer - 4\\\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 144.99,\n            \"upc\": \"012562165141\",\n            \"shipping\": 0,\n            \"description\": \"80W maximum power (20W RMS); 4\\\" IMPP composite cone woofer; 3/4\\\" horn tweeter\",\n            \"manufacturer\": \"Pioneer\",\n            \"model\": \"TS-X200\",\n            \"url\": \"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302000\",\n                    \"name\": \"Car Audio\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"abcat0302005\",\n                    \"name\": \"Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat360500050015\",\n                    \"name\": \"4\\\" Car Speakers\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 312290,\n            \"name\": \"Duracell - 9V Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 7.99,\n            \"upc\": \"041333216010\",\n            \"shipping\": 0,\n            \"description\": \"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack\",\n            \"manufacturer\": \"Duracell\",\n            \"model\": \"MN1604B2Z\",\n            \"url\": \"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208002\",\n                    \"name\": \"Alkaline Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 333179,\n            \"name\": \"Energizer - N Cell E90 Batteries (2-Pack)\",\n            \"type\": \"HardGood\",\n            \"price\": 5.99,\n            \"upc\": \"039800013200\",\n            \"shipping\": 0,\n            \"description\": \"Alkaline batteries; 1.5V\",\n            \"manufacturer\": \"Energizer\",\n            \"model\": \"E90BP-2\",\n            \"url\": \"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0208006\",\n                    \"name\": \"Specialty Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat248700050021\",\n                    \"name\": \"Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat303600050001\",\n                    \"name\": \"Household Batteries\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat312300050015\",\n                    \"name\": \"Connected Home & Housewares\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                }\n            ]\n        },\n        {\n            \"id\": 346575,\n            \"name\": \"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black\",\n            \"type\": \"HardGood\",\n            \"price\": 16.99,\n            \"upc\": \"086429002757\",\n            \"shipping\": 0,\n            \"description\": \"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket\",\n            \"manufacturer\": \"Metra\",\n            \"model\": \"99-5512\",\n            \"url\": \"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC\",\n            \"image\": \"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg\",\n            \"createdAt\": \"2016-11-17T17:58:03.298Z\",\n            \"updatedAt\": \"2016-11-17T17:58:03.298Z\",\n            \"categories\": [\n                {\n                    \"id\": \"abcat0300000\",\n                    \"name\": \"Car Electronics & GPS\",\n                    \"createdAt\": \"2016-11-17T17:57:04.285Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.285Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050023\",\n                    \"name\": \"Car Installation Parts & Accessories\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050031\",\n                    \"name\": \"Deck Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat165900050033\",\n                    \"name\": \"Dash Installation Kits\",\n                    \"createdAt\": \"2016-11-17T17:57:05.399Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:05.399Z\"\n                },\n                {\n                    \"id\": \"pcmcat331600050007\",\n                    \"name\": \"Car Audio Installation Parts\",\n                    \"createdAt\": \"2016-11-17T17:57:04.643Z\",\n                    \"updatedAt\": \"2016-11-17T17:57:04.643Z\"\n                }\n            ]\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "BasicAuthentication",
+      "_postman_id": "04f6d9db-40f7-4766-85bd-bacce3766ef9",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": {
+            "password": "y2cfyllv7fj76fv2oecl4rig2kdwvdhbgetwty562fbeuexkupnq",
+            "username": "sukanyadev0905@gmail.com"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "https://dev.azure.com/sukanyadev0905/_apis/projects"
+      },
+      "response": [
+        {
+          "id": "2bbe5cb6-9b42-4283-9086-fe4df44897f4",
+          "name": "BasicAuthentication",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "https://dev.azure.com/sukanyadev0905/_apis/projects"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Content-Length",
+              "value": "415"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8; api-version=7.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Expires",
+              "value": "-1"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "P3P",
+              "value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+            },
+            {
+              "key": "P3P",
+              "value": "CP=\"CAO DSP COR ADMa DEV CONo TELo CUR PSA PSD TAI IVDo OUR SAMi BUS DEM NAV STA UNI COM INT PHY ONL FIN PUR LOC CNT\""
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "X-VSS-UseRequestRouting=True; domain=.dev.azure.com; expires=Sat, 19-Feb-2022 23:57:02 GMT; path=/; secure; HttpOnly"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "X-VSS-UseRequestRouting=True; domain=.dev.azure.com; expires=Sat, 19-Feb-2022 23:57:02 GMT; path=/; secure; HttpOnly"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "VstsSession=%7B%22PersistentSessionId%22%3A%2261a193cb-3fd3-4f06-a8ad-2792f335d517%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D;SameSite=None; domain=.dev.azure.com; expires=Sun, 19-Feb-2023 22:57:02 GMT; path=/; secure; HttpOnly"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "VstsSession=%7B%22PersistentSessionId%22%3A%2271062ccf-3d25-4b0f-b8d0-ef3924fd6b3a%22%2C%22PendingAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22CurrentAuthenticationSessionId%22%3A%2200000000-0000-0000-0000-000000000000%22%2C%22SignInState%22%3A%7B%7D%7D;SameSite=None; domain=.dev.azure.com; expires=Sun, 19-Feb-2023 22:57:02 GMT; path=/; secure; HttpOnly"
+            },
+            {
+              "key": "X-TFS-ProcessId",
+              "value": "0c65508f-b6df-4969-bdc5-622e57e626ed"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=31536000; includeSubDomains"
+            },
+            {
+              "key": "X-VSS-RequestRouted",
+              "value": "tfsprodcus7.centralus.cloudapp.azure.com"
+            },
+            {
+              "key": "x-tfs-processid",
+              "value": "a02296dc-dbde-4d9f-8928-07d853210308"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=31536000; includeSubDomains"
+            },
+            {
+              "key": "activityid",
+              "value": "6158bb06-95fb-40db-82c2-8b38cd76f5b8"
+            },
+            {
+              "key": "x-tfs-session",
+              "value": "080201b8-cfd3-42c3-9b39-b9d1525b8133"
+            },
+            {
+              "key": "x-vss-e2eid",
+              "value": "080201b8-cfd3-42c3-9b39-b9d1525b8133"
+            },
+            {
+              "key": "x-vss-senderdeploymentid",
+              "value": "94e1fcc1-cd1f-c5c6-46d2-7bb495569480"
+            },
+            {
+              "key": "x-vss-userdata",
+              "value": "d2bb7a99-cd34-62d5-877d-33f696b022f3:sukanyadev0905@gmail.com"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:ca6a5a5b-8b41-4983-a634-c105b7bf5a7a"
+            },
+            {
+              "key": "access-control-expose-headers",
+              "value": "Request-Context"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ARR/3.0"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-Cache",
+              "value": "CONFIG_NOCACHE"
+            },
+            {
+              "key": "X-MSEdge-Ref",
+              "value": "Ref A: 659EFD08EC1A4314A297AA20985A3725 Ref B: BLUEDGE1813 Ref C: 2022-02-19T22:57:02Z"
+            },
+            {
+              "key": "Date",
+              "value": "Sat, 19 Feb 2022 22:57:02 GMT"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "{\n    \"count\": 2,\n    \"value\": [\n        {\n            \"id\": \"d0904a1d-d472-4691-b78e-07361d4bc217\",\n            \"name\": \"API Testing\",\n            \"url\": \"https://dev.azure.com/sukanyadev0905/_apis/projects/d0904a1d-d472-4691-b78e-07361d4bc217\",\n            \"state\": \"wellFormed\",\n            \"revision\": 19,\n            \"visibility\": \"private\",\n            \"lastUpdateTime\": \"2022-02-19T22:25:29.78Z\"\n        },\n        {\n            \"id\": \"5f51dd88-af32-4dfc-9483-b171a9fd6bbf\",\n            \"name\": \"Coursera project\",\n            \"url\": \"https://dev.azure.com/sukanyadev0905/_apis/projects/5f51dd88-af32-4dfc-9483-b171a9fd6bbf\",\n            \"state\": \"wellFormed\",\n            \"revision\": 11,\n            \"visibility\": \"private\",\n            \"lastUpdateTime\": \"2022-02-19T22:24:22.463Z\"\n        }\n    ]\n}"
+        }
+      ]
+    }
+  ]
+}
